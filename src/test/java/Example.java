@@ -35,12 +35,12 @@ public class Example extends BaseTest {
         UserRequest login = new UserRequest("morpheus", "leader");
         CreatedUserResponse user = USER_STEPS.postCreateUser(login, 201);
     }
-    @Test(description = "Изменение пользователя")
+    @Test()
     public void putСhangeUser() {
         UserRequest login = new UserRequest("morpheus", "zion resident");
         СhangedUserResponse user = USER_STEPS.putСhangeUser(login, 200);
     }
-    @Test(description = "Изменение пользователя 2.0")
+    @Test()
     public void patchСhangeUser() {
         UserRequest login = new UserRequest("morpheus", "zion resident");
         СhangedUserResponse user = USER_STEPS.patchСhangeUser(login, 200);
